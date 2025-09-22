@@ -1,0 +1,5 @@
+command_id: DB33.0152
+test_cases:
+- expected_values:
+    ALCH_PCT: 0
+  response: 18DAF1DA03415200

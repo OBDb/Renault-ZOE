@@ -1,0 +1,7 @@
+command_id: DB33.011C
+test_cases:
+- expected_values:
+    OBDSUP: EOBD
+  response: |-
+    18DAF1DB03411C00
+    18DAF1DA03411C06

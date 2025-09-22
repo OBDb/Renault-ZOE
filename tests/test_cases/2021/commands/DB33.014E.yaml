@@ -1,0 +1,5 @@
+command_id: DB33.014E
+test_cases:
+- expected_values:
+    CLR_TIME: 0
+  response: 18DAF1DA04414E0000
