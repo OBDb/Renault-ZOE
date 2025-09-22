@@ -1,0 +1,5 @@
+command_id: '743.220207'
+test_cases:
+- expected_values:
+    RENAULT_ODO: 0
+  response: '7630762020700000000'

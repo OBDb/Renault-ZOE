@@ -14,13 +14,13 @@ test_cases:
     18DAF1DA03415BF4
     18DAF1DB03415BF2
 - expected_values:
+    BAT_SOC: 10.98039
+  response: 18DAF1DB03415B1C
+- expected_values:
     BAT_SOC: 39.21569
   response: |-
     18DAF1DB03415B63
     18DAF1DA03415B64
-- expected_values:
-    BAT_SOC: 40.78431
-  response: 18DAF1DB03415B68
 - expected_values:
     BAT_SOC: 97.64706
   response: 18DAF1DB03415BF9

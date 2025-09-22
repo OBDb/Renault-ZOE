@@ -1,0 +1,5 @@
+command_id: DB33.014D
+test_cases:
+- expected_values:
+    MIL_TIME: 0
+  response: 18DAF1DA04414D0000
