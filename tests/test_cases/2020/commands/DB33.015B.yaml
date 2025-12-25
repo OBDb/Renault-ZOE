@@ -20,10 +20,10 @@ test_cases:
     BAT_SOC: 10.98039
   response: 18DAF1DB03415B1C
 - expected_values:
-    BAT_SOC: 16.86275
+    BAT_SOC: 14.5098
   response: |-
-    18DAF1DB03415B28
-    18DAF1DA03415B2B
+    18DAF1DB03415B23
+    18DAF1DA03415B25
 - expected_values:
     BAT_SOC: 100
   response: |-
