@@ -1,0 +1,208 @@
+{
+  "diagnosticLevel": "03",
+  "commands": [
+    {
+      "hdr": "DADA",
+      "rax": "DAF1DA",
+      "proto": "15765-4-29bit",
+      "cmd": {
+        "22": "2003"
+      },
+      "freq": 1,
+      "signals": [
+        {
+          "id": "RENAULT_ZOE_VEHICLE_REPORTED_SPEED",
+          "path": "Movement",
+          "fmt": {
+            "len": 16,
+            "div": 100,
+            "min": 0,
+            "max": 180,
+            "unit": "kilometersPerHour"
+          },
+          "name": "Vehicle reported speed",
+          "suggestedMetric": "speed"
+        }
+      ],
+      "pri": "18",
+      "tst": "F1"
+    },
+    {
+      "hdr": "DADA",
+      "rax": "DAF1DA",
+      "proto": "15765-4-29bit",
+      "cmd": {
+        "22": "20FE"
+      },
+      "freq": 1,
+      "signals": [
+        {
+          "id": "RENAULT_ZOE_HVBAT_VOLTAGE",
+          "path": "Battery",
+          "fmt": {
+            "len": 16,
+            "div": 10,
+            "min": 300,
+            "max": 480,
+            "unit": "volts"
+          },
+          "name": "HV battery voltage"
+        }
+      ],
+      "pri": "18",
+      "tst": "F1"
+    },
+    {
+      "hdr": "DADA",
+      "rax": "DAF1DA",
+      "proto": "15765-4-29bit",
+      "cmd": {
+        "22": "21CC"
+      },
+      "freq": 1,
+      "signals": [
+        {
+          "id": "RENAULT_ZOE_HVBAT_CURRENT",
+          "path": "Battery",
+          "fmt": {
+            "len": 16,
+            "mul": -0.25,
+            "add": 500,
+            "min": -2000,
+            "max": 2000,
+            "unit": "amps"
+          },
+          "name": "HV battery current"
+        }
+      ],
+      "pri": "18",
+      "tst": "F1"
+    },
+    {
+      "hdr": "DADA",
+      "rax": "DAF1DA",
+      "proto": "15765-4-29bit",
+      "cmd": {
+        "22": "2006"
+      },
+      "freq": 5,
+      "signals": [
+        {
+          "id": "RENAULT_ZOE_ODOMETER",
+          "path": "Trips",
+          "fmt": {
+            "len": 24,
+            "min": 0,
+            "max": 500000,
+            "unit": "kilometers"
+          },
+          "name": "Odometer"
+        }
+      ],
+      "pri": "18",
+      "tst": "F1"
+    },
+    {
+      "hdr": "DADB",
+      "rax": "DAF1DB",
+      "proto": "15765-4-29bit",
+      "cmd": {
+        "22": "9001"
+      },
+      "freq": 1,
+      "signals": [
+        {
+          "id": "RENAULT_ZOE_SOC_BMS",
+          "path": "Battery",
+          "fmt": {
+            "len": 16,
+            "div": 100,
+            "min": 0,
+            "max": 105,
+            "unit": "percent"
+          },
+          "name": "BMS state of charge",
+          "suggestedMetric": "stateOfCharge"
+        }
+      ],
+      "pri": "18",
+      "tst": "F1"
+    },
+    {
+      "hdr": "DADB",
+      "rax": "DAF1DB",
+      "proto": "15765-4-29bit",
+      "cmd": {
+        "22": "9003"
+      },
+      "freq": 30,
+      "signals": [
+        {
+          "id": "RENAULT_ZOE_SOH",
+          "path": "Battery",
+          "fmt": {
+            "len": 16,
+            "div": 100,
+            "min": 50,
+            "max": 105,
+            "unit": "percent"
+          },
+          "name": "Battery state of health"
+        }
+      ],
+      "pri": "18",
+      "tst": "F1"
+    },
+    {
+      "hdr": "DADB",
+      "rax": "DAF1DB",
+      "proto": "15765-4-29bit",
+      "cmd": {
+        "22": "9012"
+      },
+      "freq": 5,
+      "signals": [
+        {
+          "id": "RENAULT_ZOE_HVBAT_TEMP",
+          "path": "Battery",
+          "fmt": {
+            "len": 16,
+            "mul": 0.0625,
+            "add": -40,
+            "min": -40,
+            "max": 60,
+            "unit": "celsius"
+          },
+          "name": "HV battery temperature"
+        }
+      ],
+      "pri": "18",
+      "tst": "F1"
+    },
+    {
+      "hdr": "DADB",
+      "rax": "DAF1DB",
+      "proto": "15765-4-29bit",
+      "cmd": {
+        "22": "91C8"
+      },
+      "freq": 30,
+      "signals": [
+        {
+          "id": "RENAULT_ZOE_KWH_CHARGED",
+          "path": "Battery.Charging",
+          "fmt": {
+            "len": 24,
+            "div": 1000,
+            "min": 0,
+            "max": 60,
+            "unit": "kilowattHours"
+          },
+          "name": "Energy charged"
+        }
+      ],
+      "pri": "18",
+      "tst": "F1"
+    }
+  ]
+}
