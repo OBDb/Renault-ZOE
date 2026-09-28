@@ -1,4 +1,957 @@
 { "commands": [
-
+{ "hdr": "743", "cmd": {"22": "0207"}, "freq": 2, "dbgfilter": { "to": 2019, "from": 2022 },
+  "signals": [
+    {"id": "ZOE_ODO_CLU", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "744", "rax": "764", "dbg": true, "cmd": {"22": "4009"}, "freq": 10,
+  "signals": [
+    {"id": "ZOE_CABIN_T", "path": "Climate", "fmt": { "len": 16, "max": 3236.7, "min": -3316.8, "div": 10, "add": -40, "sign": true, "unit": "celsius" }, "name": "Cabin temperature"}
+  ]},
+{ "hdr": "744", "rax": "764", "dbg": true, "cmd": {"22": "400A"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_EVAP_T", "path": "Climate", "fmt": { "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Evaporator temperature"}
+  ]},
+{ "hdr": "744", "rax": "764", "dbg": true, "cmd": {"22": "4341"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_PTC_REQ", "path": "Climate", "fmt": {"bix": 4, "len": 4, "max": 15, "unit": "scalar" }, "name": "Electric heater request"}
+  ]},
+{ "hdr": "744", "rax": "764", "dbg": true, "cmd": {"22": "4368"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_EVAP_T_SET", "path": "Climate", "fmt": { "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Evaporator temperature set point"}
+  ]},
+{ "hdr": "744", "rax": "764", "dbg": true, "cmd": {"22": "4369"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_COMP_P", "path": "Climate", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "bars" }, "name": "A/C compressor pressure"}
+  ]},
+{ "hdr": "744", "rax": "764", "dbg": true, "cmd": {"22": "43A4"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_HEAT_T", "path": "Climate", "fmt": { "len": 16, "max": 215.996, "min": -40, "div": 256, "add": -40, "unit": "celsius" }, "name": "Heating temperature"}
+  ]},
+{ "hdr": "744", "rax": "764", "dbg": true, "cmd": {"22": "43A5"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_COND_T_SET", "path": "Climate", "fmt": { "len": 16, "max": 87.998, "min": -40, "div": 512, "add": -40, "unit": "celsius" }, "name": "Heating condenser temperature set point"}
+  ]},
+{ "hdr": "744", "rax": "764", "dbg": true, "cmd": {"22": "43D8"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_COMP_RPM", "path": "Climate", "fmt": { "len": 16, "max": 65535, "unit": "rpm" }, "name": "A/C compressor speed"}
+  ]},
+{ "hdr": "744", "rax": "764", "dbg": true, "cmd": {"22": "4402"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_COMP_MODE", "path": "Climate", "name": "A/C compressor mode", "fmt": {"bix": 4, "len": 4, "map": {
+          "1": { "description": "A/C",       "value": "AC" },
+          "2": { "description": "De-ice",    "value": "DEICE" },
+          "4": { "description": "Heat pump", "value": "HEAT_PUMP" },
+          "6": { "description": "Demisting", "value": "DEMIST" },
+          "7": { "description": "Idle",      "value": "IDLE" }
+        }}
+    }
+  ]},
+{ "hdr": "744", "rax": "764", "dbg": true, "cmd": {"22": "4404"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_COMP_RPM_REQ", "path": "Climate", "fmt": { "len": 16, "max": 65535, "unit": "rpm" }, "name": "A/C compressor speed request"}
+  ]},
+{ "hdr": "744", "rax": "764", "dbg": true, "cmd": {"22": "440C"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_COMP_DIS_T", "path": "Climate", "fmt": { "len": 16, "max": 32737.5, "min": -30, "div": 2, "add": -30, "unit": "celsius" }, "name": "A/C compressor discharge temperature"}
+  ]},
+{ "hdr": "744", "rax": "764", "dbg": true, "cmd": {"22": "440D"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_COMP_SUC_T", "path": "Climate", "fmt": { "len": 16, "max": 32737.5, "min": -30, "div": 2, "add": -30, "unit": "celsius" }, "name": "A/C compressor suction temperature"}
+  ]},
+{ "hdr": "744", "rax": "764", "dbg": true, "cmd": {"22": "4429"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_COND_T", "path": "Climate", "fmt": { "len": 16, "max": 215.996, "min": -40, "div": 256, "add": -40, "unit": "celsius" }, "name": "Heating condenser temperature"}
+  ]},
+{ "hdr": "744", "rax": "764", "dbg": true, "cmd": {"22": "4436"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_COMP_PWR", "path": "Climate", "fmt": { "len": 16, "max": 16383.75, "div": 4, "unit": "watts" }, "name": "A/C compressor power"}
+  ]},
+{ "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "4109"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_TP_FL_ALERT", "path": "Tires", "name": "Front left tire pressure alert", "fmt": {"len": 16, "map": {
+          "0": { "description": "None",    "value": "NONE" },
+          "1": { "description": "Alert",   "value": "ALERT" },
+          "2": { "description": "Warning", "value": "WARNING" },
+          "3": { "description": "Alert",   "value": "ALERT" },
+          "4": { "description": "Warning", "value": "WARNING" },
+          "5": { "description": "Alert",   "value": "ALERT" },
+          "6": { "description": "Warning", "value": "WARNING" },
+          "7": { "description": "Alert",   "value": "ALERT" }
+        }}
+    }
+  ]},
+{ "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "410A"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_TP_FR_ALERT", "path": "Tires", "name": "Front right tire pressure alert", "fmt": {"len": 16, "map": {
+          "0": { "description": "None",    "value": "NONE" },
+          "1": { "description": "Alert",   "value": "ALERT" },
+          "2": { "description": "Warning", "value": "WARNING" },
+          "3": { "description": "Alert",   "value": "ALERT" },
+          "4": { "description": "Warning", "value": "WARNING" },
+          "5": { "description": "Alert",   "value": "ALERT" },
+          "6": { "description": "Warning", "value": "WARNING" },
+          "7": { "description": "Alert",   "value": "ALERT" }
+        }}
+    }
+  ]},
+{ "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "410B"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_TP_RL_ALERT", "path": "Tires", "name": "Rear left tire pressure alert", "fmt": {"len": 16, "map": {
+          "0": { "description": "None",    "value": "NONE" },
+          "1": { "description": "Alert",   "value": "ALERT" },
+          "2": { "description": "Warning", "value": "WARNING" },
+          "3": { "description": "Alert",   "value": "ALERT" },
+          "4": { "description": "Warning", "value": "WARNING" },
+          "5": { "description": "Alert",   "value": "ALERT" },
+          "6": { "description": "Warning", "value": "WARNING" },
+          "7": { "description": "Alert",   "value": "ALERT" }
+        }}
+    }
+  ]},
+{ "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "410C"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_TP_RR_ALERT", "path": "Tires", "name": "Rear right tire pressure alert", "fmt": {"len": 16, "map": {
+          "0": { "description": "None",    "value": "NONE" },
+          "1": { "description": "Alert",   "value": "ALERT" },
+          "2": { "description": "Warning", "value": "WARNING" },
+          "3": { "description": "Alert",   "value": "ALERT" },
+          "4": { "description": "Warning", "value": "WARNING" },
+          "5": { "description": "Alert",   "value": "ALERT" },
+          "6": { "description": "Warning", "value": "WARNING" },
+          "7": { "description": "Alert",   "value": "ALERT" }
+        }}
+    }
+  ]},
+{ "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "4186"}, "freq": 3,
+  "signals": [
+    {"id": "ZOE_LOW_BEAM", "path": "Lights", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Low beams on"}
+  ]},
+{ "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "6026"}, "freq": 3,
+  "signals": [
+    {"id": "ZOE_FL_DOOR", "path": "Doors", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Front left door open"}
+  ]},
+{ "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "6027"}, "freq": 3,
+  "signals": [
+    {"id": "ZOE_FR_DOOR", "path": "Doors", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Front right door open"}
+  ]},
+{ "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "609B"}, "freq": 3,
+  "signals": [
+    {"id": "ZOE_TAILGATE", "path": "Doors", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Tailgate open"}
+  ]},
+{ "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "60C6"}, "freq": 3,
+  "signals": [
+    {"id": "ZOE_IGN", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Ignition relay on"}
+  ]},
+{ "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "61B2"}, "freq": 3,
+  "signals": [
+    {"id": "ZOE_RL_DOOR", "path": "Doors", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Rear left door open"}
+  ]},
+{ "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "61B3"}, "freq": 3,
+  "signals": [
+    {"id": "ZOE_RR_DOOR", "path": "Doors", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Rear right door open"}
+  ]},
+{ "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "6300"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_TP_FL", "path": "Tires", "fmt": { "len": 16, "max": 766.5, "mul": 3, "div": 4, "nullmax": 1022, "unit": "kilopascal" }, "name": "Front left tire pressure", "suggestedMetric": "frontLeftTirePressure"}
+  ]},
+{ "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "6301"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_TP_FR", "path": "Tires", "fmt": { "len": 16, "max": 766.5, "mul": 3, "div": 4, "nullmax": 1022, "unit": "kilopascal" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"}
+  ]},
+{ "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "6302"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_TP_RL", "path": "Tires", "fmt": { "len": 16, "max": 766.5, "mul": 3, "div": 4, "nullmax": 1022, "unit": "kilopascal" }, "name": "Rear left tire pressure", "suggestedMetric": "rearLeftTirePressure"}
+  ]},
+{ "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "6303"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_TP_RR", "path": "Tires", "fmt": { "len": 16, "max": 766.5, "mul": 3, "div": 4, "nullmax": 1022, "unit": "kilopascal" }, "name": "Rear right tire pressure", "suggestedMetric": "rearRightTirePressure"}
+  ]},
+{ "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "6310"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_TT_FL", "path": "Tires", "fmt": { "len": 8, "max": 96, "min": -30, "add": -30, "nullmax": 126, "unit": "celsius" }, "name": "Front left tire temperature", "suggestedMetric": "frontLeftTireTemperature"}
+  ]},
+{ "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "6311"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_TT_FR", "path": "Tires", "fmt": { "len": 8, "max": 96, "min": -30, "add": -30, "nullmax": 126, "unit": "celsius" }, "name": "Front right tire temperature", "suggestedMetric": "frontRightTireTemperature"}
+  ]},
+{ "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "6312"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_TT_RL", "path": "Tires", "fmt": { "len": 8, "max": 96, "min": -30, "add": -30, "nullmax": 126, "unit": "celsius" }, "name": "Rear left tire temperature", "suggestedMetric": "rearLeftTireTemperature"}
+  ]},
+{ "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "6313"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_TT_RR", "path": "Tires", "fmt": { "len": 8, "max": 96, "min": -30, "add": -30, "nullmax": 126, "unit": "celsius" }, "name": "Rear right tire temperature", "suggestedMetric": "rearRightTireTemperature"}
+  ]},
+{ "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "8004"}, "freq": 3,
+  "signals": [
+    {"id": "ZOE_LOCKED", "path": "Doors", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Vehicle locked"}
+  ]},
+{ "hdr": "74D", "rax": "76D", "dbg": true, "cmd": {"22": "6079"}, "freq": 10,
+  "signals": [
+    {"id": "ZOE_12V_A", "path": "Electrical", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "amps" }, "name": "12V battery current"}
+  ]},
+{ "hdr": "79B", "rax": "7BB", "dbg": true, "cmd": {"21": "04"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_MOD_T1",  "path": "Battery", "fmt": {"bix": 16,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery module 1 temperature"},
+    {"id": "ZOE_MOD_T2",  "path": "Battery", "fmt": {"bix": 40,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery module 2 temperature"},
+    {"id": "ZOE_MOD_T3",  "path": "Battery", "fmt": {"bix": 64,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery module 3 temperature"},
+    {"id": "ZOE_MOD_T4",  "path": "Battery", "fmt": {"bix": 88,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery module 4 temperature"},
+    {"id": "ZOE_MOD_T5",  "path": "Battery", "fmt": {"bix": 112, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery module 5 temperature"},
+    {"id": "ZOE_MOD_T6",  "path": "Battery", "fmt": {"bix": 136, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery module 6 temperature"},
+    {"id": "ZOE_MOD_T7",  "path": "Battery", "fmt": {"bix": 160, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery module 7 temperature"},
+    {"id": "ZOE_MOD_T8",  "path": "Battery", "fmt": {"bix": 184, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery module 8 temperature"},
+    {"id": "ZOE_MOD_T9",  "path": "Battery", "fmt": {"bix": 208, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery module 9 temperature"},
+    {"id": "ZOE_MOD_T10", "path": "Battery", "fmt": {"bix": 232, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery module 10 temperature"},
+    {"id": "ZOE_MOD_T11", "path": "Battery", "fmt": {"bix": 256, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery module 11 temperature"},
+    {"id": "ZOE_MOD_T12", "path": "Battery", "fmt": {"bix": 280, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery module 12 temperature"}
+  ]},
+{ "hdr": "79B", "rax": "7BB", "dbg": true, "cmd": {"21": "41"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL1_V1",  "path": "Battery.Cells", "fmt": {            "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 1 voltage"},
+    {"id": "ZOE_CELL1_V2",  "path": "Battery.Cells", "fmt": {"bix": 16,  "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 2 voltage"},
+    {"id": "ZOE_CELL1_V3",  "path": "Battery.Cells", "fmt": {"bix": 32,  "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 3 voltage"},
+    {"id": "ZOE_CELL1_V4",  "path": "Battery.Cells", "fmt": {"bix": 48,  "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 4 voltage"},
+    {"id": "ZOE_CELL1_V5",  "path": "Battery.Cells", "fmt": {"bix": 64,  "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 5 voltage"},
+    {"id": "ZOE_CELL1_V6",  "path": "Battery.Cells", "fmt": {"bix": 80,  "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 6 voltage"},
+    {"id": "ZOE_CELL1_V7",  "path": "Battery.Cells", "fmt": {"bix": 96,  "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 7 voltage"},
+    {"id": "ZOE_CELL1_V8",  "path": "Battery.Cells", "fmt": {"bix": 112, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 8 voltage"},
+    {"id": "ZOE_CELL1_V9",  "path": "Battery.Cells", "fmt": {"bix": 128, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 9 voltage"},
+    {"id": "ZOE_CELL1_V10", "path": "Battery.Cells", "fmt": {"bix": 144, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 10 voltage"},
+    {"id": "ZOE_CELL1_V11", "path": "Battery.Cells", "fmt": {"bix": 160, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 11 voltage"},
+    {"id": "ZOE_CELL1_V12", "path": "Battery.Cells", "fmt": {"bix": 176, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 12 voltage"},
+    {"id": "ZOE_CELL1_V13", "path": "Battery.Cells", "fmt": {"bix": 192, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 13 voltage"},
+    {"id": "ZOE_CELL1_V14", "path": "Battery.Cells", "fmt": {"bix": 208, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 14 voltage"},
+    {"id": "ZOE_CELL1_V15", "path": "Battery.Cells", "fmt": {"bix": 224, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 15 voltage"},
+    {"id": "ZOE_CELL1_V16", "path": "Battery.Cells", "fmt": {"bix": 240, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 16 voltage"},
+    {"id": "ZOE_CELL1_V17", "path": "Battery.Cells", "fmt": {"bix": 256, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 17 voltage"},
+    {"id": "ZOE_CELL1_V18", "path": "Battery.Cells", "fmt": {"bix": 272, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 18 voltage"},
+    {"id": "ZOE_CELL1_V19", "path": "Battery.Cells", "fmt": {"bix": 288, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 19 voltage"},
+    {"id": "ZOE_CELL1_V20", "path": "Battery.Cells", "fmt": {"bix": 304, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 20 voltage"},
+    {"id": "ZOE_CELL1_V21", "path": "Battery.Cells", "fmt": {"bix": 320, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 21 voltage"},
+    {"id": "ZOE_CELL1_V22", "path": "Battery.Cells", "fmt": {"bix": 336, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 22 voltage"},
+    {"id": "ZOE_CELL1_V23", "path": "Battery.Cells", "fmt": {"bix": 352, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 23 voltage"},
+    {"id": "ZOE_CELL1_V24", "path": "Battery.Cells", "fmt": {"bix": 368, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 24 voltage"},
+    {"id": "ZOE_CELL1_V25", "path": "Battery.Cells", "fmt": {"bix": 384, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 25 voltage"},
+    {"id": "ZOE_CELL1_V26", "path": "Battery.Cells", "fmt": {"bix": 400, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 26 voltage"},
+    {"id": "ZOE_CELL1_V27", "path": "Battery.Cells", "fmt": {"bix": 416, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 27 voltage"},
+    {"id": "ZOE_CELL1_V28", "path": "Battery.Cells", "fmt": {"bix": 432, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 28 voltage"},
+    {"id": "ZOE_CELL1_V29", "path": "Battery.Cells", "fmt": {"bix": 448, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 29 voltage"},
+    {"id": "ZOE_CELL1_V30", "path": "Battery.Cells", "fmt": {"bix": 464, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 30 voltage"},
+    {"id": "ZOE_CELL1_V31", "path": "Battery.Cells", "fmt": {"bix": 480, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 31 voltage"},
+    {"id": "ZOE_CELL1_V32", "path": "Battery.Cells", "fmt": {"bix": 496, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 32 voltage"},
+    {"id": "ZOE_CELL1_V33", "path": "Battery.Cells", "fmt": {"bix": 512, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 33 voltage"},
+    {"id": "ZOE_CELL1_V34", "path": "Battery.Cells", "fmt": {"bix": 528, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 34 voltage"},
+    {"id": "ZOE_CELL1_V35", "path": "Battery.Cells", "fmt": {"bix": 544, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 35 voltage"},
+    {"id": "ZOE_CELL1_V36", "path": "Battery.Cells", "fmt": {"bix": 560, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 36 voltage"},
+    {"id": "ZOE_CELL1_V37", "path": "Battery.Cells", "fmt": {"bix": 576, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 37 voltage"},
+    {"id": "ZOE_CELL1_V38", "path": "Battery.Cells", "fmt": {"bix": 592, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 38 voltage"},
+    {"id": "ZOE_CELL1_V39", "path": "Battery.Cells", "fmt": {"bix": 608, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 39 voltage"},
+    {"id": "ZOE_CELL1_V40", "path": "Battery.Cells", "fmt": {"bix": 624, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 40 voltage"},
+    {"id": "ZOE_CELL1_V41", "path": "Battery.Cells", "fmt": {"bix": 640, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 41 voltage"},
+    {"id": "ZOE_CELL1_V42", "path": "Battery.Cells", "fmt": {"bix": 656, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 42 voltage"},
+    {"id": "ZOE_CELL1_V43", "path": "Battery.Cells", "fmt": {"bix": 672, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 43 voltage"},
+    {"id": "ZOE_CELL1_V44", "path": "Battery.Cells", "fmt": {"bix": 688, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 44 voltage"},
+    {"id": "ZOE_CELL1_V45", "path": "Battery.Cells", "fmt": {"bix": 704, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 45 voltage"},
+    {"id": "ZOE_CELL1_V46", "path": "Battery.Cells", "fmt": {"bix": 720, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 46 voltage"},
+    {"id": "ZOE_CELL1_V47", "path": "Battery.Cells", "fmt": {"bix": 736, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 47 voltage"},
+    {"id": "ZOE_CELL1_V48", "path": "Battery.Cells", "fmt": {"bix": 752, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 48 voltage"},
+    {"id": "ZOE_CELL1_V49", "path": "Battery.Cells", "fmt": {"bix": 768, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 49 voltage"},
+    {"id": "ZOE_CELL1_V50", "path": "Battery.Cells", "fmt": {"bix": 784, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 50 voltage"},
+    {"id": "ZOE_CELL1_V51", "path": "Battery.Cells", "fmt": {"bix": 800, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 51 voltage"},
+    {"id": "ZOE_CELL1_V52", "path": "Battery.Cells", "fmt": {"bix": 816, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 52 voltage"},
+    {"id": "ZOE_CELL1_V53", "path": "Battery.Cells", "fmt": {"bix": 832, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 53 voltage"},
+    {"id": "ZOE_CELL1_V54", "path": "Battery.Cells", "fmt": {"bix": 848, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 54 voltage"},
+    {"id": "ZOE_CELL1_V55", "path": "Battery.Cells", "fmt": {"bix": 864, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 55 voltage"},
+    {"id": "ZOE_CELL1_V56", "path": "Battery.Cells", "fmt": {"bix": 880, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 56 voltage"},
+    {"id": "ZOE_CELL1_V57", "path": "Battery.Cells", "fmt": {"bix": 896, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 57 voltage"},
+    {"id": "ZOE_CELL1_V58", "path": "Battery.Cells", "fmt": {"bix": 912, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 58 voltage"},
+    {"id": "ZOE_CELL1_V59", "path": "Battery.Cells", "fmt": {"bix": 928, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 59 voltage"},
+    {"id": "ZOE_CELL1_V60", "path": "Battery.Cells", "fmt": {"bix": 944, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 60 voltage"},
+    {"id": "ZOE_CELL1_V61", "path": "Battery.Cells", "fmt": {"bix": 960, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 61 voltage"},
+    {"id": "ZOE_CELL1_V62", "path": "Battery.Cells", "fmt": {"bix": 976, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 62 voltage"}
+  ]},
+{ "hdr": "79B", "rax": "7BB", "dbg": true, "cmd": {"21": "42"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL1_V63", "path": "Battery.Cells", "fmt": {            "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 63 voltage"},
+    {"id": "ZOE_CELL1_V64", "path": "Battery.Cells", "fmt": {"bix": 16,  "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 64 voltage"},
+    {"id": "ZOE_CELL1_V65", "path": "Battery.Cells", "fmt": {"bix": 32,  "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 65 voltage"},
+    {"id": "ZOE_CELL1_V66", "path": "Battery.Cells", "fmt": {"bix": 48,  "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 66 voltage"},
+    {"id": "ZOE_CELL1_V67", "path": "Battery.Cells", "fmt": {"bix": 64,  "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 67 voltage"},
+    {"id": "ZOE_CELL1_V68", "path": "Battery.Cells", "fmt": {"bix": 80,  "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 68 voltage"},
+    {"id": "ZOE_CELL1_V69", "path": "Battery.Cells", "fmt": {"bix": 96,  "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 69 voltage"},
+    {"id": "ZOE_CELL1_V70", "path": "Battery.Cells", "fmt": {"bix": 112, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 70 voltage"},
+    {"id": "ZOE_CELL1_V71", "path": "Battery.Cells", "fmt": {"bix": 128, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 71 voltage"},
+    {"id": "ZOE_CELL1_V72", "path": "Battery.Cells", "fmt": {"bix": 144, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 72 voltage"},
+    {"id": "ZOE_CELL1_V73", "path": "Battery.Cells", "fmt": {"bix": 160, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 73 voltage"},
+    {"id": "ZOE_CELL1_V74", "path": "Battery.Cells", "fmt": {"bix": 176, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 74 voltage"},
+    {"id": "ZOE_CELL1_V75", "path": "Battery.Cells", "fmt": {"bix": 192, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 75 voltage"},
+    {"id": "ZOE_CELL1_V76", "path": "Battery.Cells", "fmt": {"bix": 208, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 76 voltage"},
+    {"id": "ZOE_CELL1_V77", "path": "Battery.Cells", "fmt": {"bix": 224, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 77 voltage"},
+    {"id": "ZOE_CELL1_V78", "path": "Battery.Cells", "fmt": {"bix": 240, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 78 voltage"},
+    {"id": "ZOE_CELL1_V79", "path": "Battery.Cells", "fmt": {"bix": 256, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 79 voltage"},
+    {"id": "ZOE_CELL1_V80", "path": "Battery.Cells", "fmt": {"bix": 272, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 80 voltage"},
+    {"id": "ZOE_CELL1_V81", "path": "Battery.Cells", "fmt": {"bix": 288, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 81 voltage"},
+    {"id": "ZOE_CELL1_V82", "path": "Battery.Cells", "fmt": {"bix": 304, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 82 voltage"},
+    {"id": "ZOE_CELL1_V83", "path": "Battery.Cells", "fmt": {"bix": 320, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 83 voltage"},
+    {"id": "ZOE_CELL1_V84", "path": "Battery.Cells", "fmt": {"bix": 336, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 84 voltage"},
+    {"id": "ZOE_CELL1_V85", "path": "Battery.Cells", "fmt": {"bix": 352, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 85 voltage"},
+    {"id": "ZOE_CELL1_V86", "path": "Battery.Cells", "fmt": {"bix": 368, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 86 voltage"},
+    {"id": "ZOE_CELL1_V87", "path": "Battery.Cells", "fmt": {"bix": 384, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 87 voltage"},
+    {"id": "ZOE_CELL1_V88", "path": "Battery.Cells", "fmt": {"bix": 400, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 88 voltage"},
+    {"id": "ZOE_CELL1_V89", "path": "Battery.Cells", "fmt": {"bix": 416, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 89 voltage"},
+    {"id": "ZOE_CELL1_V90", "path": "Battery.Cells", "fmt": {"bix": 432, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 90 voltage"},
+    {"id": "ZOE_CELL1_V91", "path": "Battery.Cells", "fmt": {"bix": 448, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 91 voltage"},
+    {"id": "ZOE_CELL1_V92", "path": "Battery.Cells", "fmt": {"bix": 464, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 92 voltage"},
+    {"id": "ZOE_CELL1_V93", "path": "Battery.Cells", "fmt": {"bix": 480, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 93 voltage"},
+    {"id": "ZOE_CELL1_V94", "path": "Battery.Cells", "fmt": {"bix": 496, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 94 voltage"},
+    {"id": "ZOE_CELL1_V95", "path": "Battery.Cells", "fmt": {"bix": 512, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 95 voltage"},
+    {"id": "ZOE_CELL1_V96", "path": "Battery.Cells", "fmt": {"bix": 528, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 96 voltage"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "3203"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_HV_V_PEB", "path": "Battery", "fmt": { "len": 16, "max": 32767.5, "div": 2, "unit": "volts" }, "name": "High voltage battery voltage, power electronics"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "3204"}, "freq": 2,
+  "signals": [
+    {"id": "ZOE_HV_A_PEB", "path": "Battery", "fmt": { "len": 16, "max": 8191.75, "min": -8192, "div": 4, "add": -8192, "unit": "amps" }, "name": "High voltage battery current, power electronics"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "33F6"}, "freq": 10,
+  "signals": [
+    {"id": "ZOE_INV_T_PEB", "path": "Drivetrain", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Inverter temperature, power electronics"}
+  ]},
+{ "hdr": "DADA", "rax": "DA", "dbg": true, "cmd": {"22": "2002"}, "freq": 10,
+  "signals": [
+    {"id": "ZOE_SOC_EVC", "path": "Battery", "fmt": { "len": 16, "max": 1310.7, "div": 50, "unit": "percent" }, "name": "State of charge, vehicle controller"}
+  ]},
+{ "hdr": "DADA", "rax": "DA", "dbg": true, "cmd": {"22": "2003"}, "freq": 1,
+  "signals": [
+    {"id": "ZOE_VSS", "path": "Movement", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
+  ]},
+{ "hdr": "DADA", "rax": "DA", "dbg": true, "cmd": {"22": "2005"}, "freq": 10,
+  "signals": [
+    {"id": "ZOE_12V_V", "path": "Electrical", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "volts" }, "name": "12V battery voltage", "suggestedMetric": "starterBatteryVoltage"}
+  ]},
+{ "hdr": "DADA", "rax": "DA", "dbg": true, "cmd": {"22": "2006"}, "freq": 10,
+  "signals": [
+    {"id": "ZOE_ODO", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "DADA", "rax": "DA", "dbg": true, "cmd": {"22": "20FE"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_HV_V_EVC", "path": "Battery", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "volts" }, "name": "High voltage battery voltage, vehicle controller"}
+  ]},
+{ "hdr": "DADA", "rax": "DA", "dbg": true, "cmd": {"22": "21CC"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_HV_A_EVC", "path": "Battery", "fmt": { "len": 16, "max": 15883.75, "min": -500, "div": 4, "add": -500, "unit": "amps" }, "name": "High voltage battery current, vehicle controller"}
+  ]},
+{ "hdr": "DADA", "rax": "DA", "dbg": true, "cmd": {"22": "21CF"}, "freq": 10,
+  "signals": [
+    {"id": "ZOE_INV_STATE", "path": "Drivetrain", "name": "Inverter state", "fmt": {"bix": 4, "len": 4, "map": {
+          "1": { "description": "Off",             "value": "OFF" },
+          "2": { "description": "On",              "value": "ON" },
+          "3": { "description": "Discharging",     "value": "DISCHARGING" },
+          "4": { "description": "Alternator mode", "value": "ALTERNATOR" },
+          "5": { "description": "Ready to sleep",  "value": "SLEEP_READY" }
+        }}
+    }
+  ]},
+{ "hdr": "DADA", "rax": "DA", "dbg": true, "cmd": {"22": "2218"}, "freq": 20,
+  "signals": [
+    {"id": "ZOE_AAT", "path": "Climate", "fmt": { "len": 16, "max": 6280.5, "min": -273, "div": 10, "add": -273, "unit": "celsius" }, "name": "Ambient air temperature"}
+  ]},
+{ "hdr": "DADA", "rax": "DA", "dbg": true, "cmd": {"22": "2B6D"}, "freq": 2,
+  "signals": [
+    {"id": "ZOE_CHG_STATE", "path": "Battery", "name": "Charge state", "fmt": {"bix": 4, "len": 4, "map": {
+          "0": { "description": "Stopped",           "value": "STOPPED" },
+          "1": { "description": "Waiting for timer", "value": "TIMER_WAIT" },
+          "2": { "description": "Done",              "value": "DONE" },
+          "3": { "description": "Battery",           "value": "CHARGING" },
+          "4": { "description": "Interrupted",       "value": "INTERRUPTED" },
+          "5": { "description": "Waiting for power", "value": "POWER_WAIT" },
+          "6": { "description": "Charge flap open",  "value": "FLAP_OPEN" },
+          "8": { "description": "Preparing",         "value": "PREPARING" }
+        }}
+    }
+  ]},
+{ "hdr": "DADA", "rax": "DA", "dbg": true, "cmd": {"22": "2B7A"}, "freq": 2,
+  "signals": [
+    {"id": "ZOE_CHG_TYPE", "path": "Battery", "name": "Charge type", "fmt": {"bix": 4, "len": 4, "map": {
+          "0": { "description": "Undefined", "value": "UNDEFINED" },
+          "1": { "description": "Type 2",    "value": "TYPE2" },
+          "2": { "description": "Type 2",    "value": "TYPE2" },
+          "3": { "description": "CHAdeMO",   "value": "CHADEMO" },
+          "4": { "description": "CCS",       "value": "CCS" }
+        }}
+    }
+  ]},
+{ "hdr": "DADA", "rax": "DA", "dbg": true, "cmd": {"22": "2B85"}, "freq": 2,
+  "signals": [
+    {"id": "ZOE_PLUG", "path": "Battery", "fmt": {"bix": 4, "len": 4, "max": 1, "unit": "noyes" }, "name": "Charge plug present", "suggestedMetric": "pluggedIn"}
+  ]},
+{ "hdr": "DADA", "rax": "DA", "dbg": true, "cmd": {"22": "2B8A"}, "freq": 2,
+  "signals": [
+    {"id": "ZOE_AC_V", "path": "Battery", "fmt": { "len": 16, "max": 32767.5, "div": 2, "unit": "volts" }, "name": "AC mains voltage"}
+  ]},
+{ "hdr": "DADA", "rax": "DA", "dbg": true, "cmd": {"22": "300B"}, "freq": 2,
+  "signals": [
+    {"id": "ZOE_AC_PHASES", "path": "Battery", "name": "AC mains phases", "fmt": {"bix": 4, "len": 4, "map": {
+          "0": { "description": "One phase",    "value": "ONE" },
+          "1": { "description": "Two phase",    "value": "TWO" },
+          "2": { "description": "Three phase",  "value": "THREE" },
+          "3": { "description": "Not detected", "value": "NONE" }
+        }}
+    }
+  ]},
+{ "hdr": "DADA", "rax": "DA", "dbg": true, "cmd": {"22": "300D"}, "freq": 2,
+  "signals": [
+    {"id": "ZOE_AC_A", "path": "Battery", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "amps" }, "name": "AC mains current"}
+  ]},
+{ "hdr": "DADA", "rax": "DA", "dbg": true, "cmd": {"22": "300F"}, "freq": 2,
+  "signals": [
+    {"id": "ZOE_AC_P_AVAIL", "path": "Battery", "fmt": { "len": 16, "max": 1638.375, "div": 40, "unit": "kilowatts" }, "name": "AC charging power available"}
+  ]},
+{ "hdr": "DADA", "rax": "DA", "dbg": true, "cmd": {"22": "3042"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_HV_A_3042", "path": "Battery", "fmt": { "len": 16, "max": 16383.75, "min": -16383.75, "div": 2, "add": -16383.75, "unit": "amps" }, "name": "High voltage battery current"}
+  ]},
+{ "hdr": "DADA", "rax": "DA", "dbg": true, "cmd": {"22": "3064"}, "freq": 1,
+  "signals": [
+    {"id": "ZOE_MOTOR_RPM", "path": "Drivetrain", "fmt": { "len": 16, "max": 65535, "unit": "rpm" }, "name": "Motor speed"}
+  ]},
+{ "hdr": "DADA", "rax": "DA", "dbg": true, "cmd": {"22": "9002"}, "freq": 10,
+  "signals": [
+    {"id": "ZOE_SOC_9002", "path": "Battery", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "percent" }, "name": "State of charge"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9001"}, "freq": 10,
+  "signals": [
+    {"id": "ZOE_SOC_9001", "path": "Battery", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "percent" }, "name": "State of charge, battery controller"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9002"}, "freq": 10,
+  "signals": [
+    {"id": "ZOE_SOC", "path": "Battery", "fmt": { "len": 16, "max": 100, "div": 100, "unit": "percent" }, "name": "State of charge", "suggestedMetric": "stateOfCharge"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9003"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_SOH", "path": "Battery", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "percent" }, "name": "State of health", "suggestedMetric": "stateOfHealth"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9005"}, "freq": 2,
+  "signals": [
+    {"id": "ZOE_HV_V", "path": "Battery", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "volts" }, "name": "High voltage battery voltage", "suggestedMetric": "tractionBatteryVoltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9012"}, "freq": 10,
+  "signals": [
+    {"id": "ZOE_HV_T", "path": "Battery", "fmt": { "len": 16, "max": 4055.9375, "min": -40, "div": 16, "add": -40, "unit": "celsius" }, "name": "High voltage battery average temperature"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9018"}, "freq": 10,
+  "signals": [
+    {"id": "ZOE_CHG_P_MAX", "path": "Battery", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "kilowatts" }, "name": "Maximum charge power"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9021"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V1", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 1 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9022"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V2", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 2 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9023"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V3", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 3 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9024"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V4", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 4 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9025"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V5", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 5 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9026"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V6", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 6 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9027"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V7", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 7 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9028"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V8", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 8 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9029"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V9", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 9 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "902A"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V10", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 10 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "902B"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V11", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 11 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "902C"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V12", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 12 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "902D"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V13", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 13 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "902E"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V14", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 14 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "902F"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V15", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 15 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9030"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V16", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 16 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9031"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V17", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 17 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9032"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V18", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 18 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9033"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V19", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 19 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9034"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V20", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 20 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9035"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V21", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 21 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9036"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V22", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 22 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9037"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V23", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 23 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9038"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V24", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 24 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9039"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V25", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 25 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "903A"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V26", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 26 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "903B"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V27", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 27 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "903C"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V28", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 28 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "903D"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V29", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 29 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "903E"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V30", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 30 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "903F"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V31", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 31 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9041"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V32", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 32 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9042"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V33", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 33 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9043"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V34", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 34 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9044"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V35", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 35 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9045"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V36", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 36 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9046"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V37", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 37 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9047"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V38", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 38 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9048"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V39", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 39 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9049"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V40", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 40 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "904A"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V41", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 41 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "904B"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V42", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 42 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "904C"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V43", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 43 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "904D"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V44", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 44 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "904E"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V45", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 45 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "904F"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V46", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 46 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9050"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V47", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 47 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9051"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V48", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 48 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9052"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V49", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 49 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9053"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V50", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 50 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9054"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V51", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 51 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9055"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V52", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 52 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9056"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V53", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 53 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9057"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V54", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 54 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9058"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V55", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 55 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9059"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V56", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 56 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "905A"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V57", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 57 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "905B"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V58", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 58 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "905C"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V59", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 59 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "905D"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V60", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 60 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "905E"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V61", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 61 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "905F"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V62", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 62 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9061"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V63", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 63 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9062"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V64", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 64 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9063"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V65", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 65 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9064"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V66", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 66 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9065"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V67", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 67 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9066"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V68", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 68 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9067"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V69", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 69 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9068"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V70", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 70 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9069"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V71", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 71 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "906A"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V72", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 72 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "906B"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V73", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 73 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "906C"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V74", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 74 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "906D"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V75", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 75 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "906E"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V76", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 76 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "906F"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V77", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 77 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9070"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V78", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 78 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9071"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V79", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 79 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9072"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V80", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 80 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9073"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V81", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 81 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9074"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V82", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 82 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9075"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V83", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 83 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9076"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V84", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 84 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9077"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V85", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 85 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9078"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V86", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 86 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9079"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V87", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 87 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "907A"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V88", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 88 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "907B"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V89", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 89 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "907C"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V90", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 90 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "907D"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V91", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 91 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "907E"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V92", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 92 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "907F"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V93", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 93 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9081"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V94", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 94 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9082"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V95", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 95 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9083"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CELL_V96", "path": "Battery.Cells", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "volts" }, "name": "Cell 96 voltage"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9131"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_PACK_T1", "path": "Battery", "fmt": { "len": 16, "max": 4055.9375, "min": -40, "div": 16, "add": -40, "unit": "celsius" }, "name": "Pack temperature 1"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9132"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_PACK_T2", "path": "Battery", "fmt": { "len": 16, "max": 4055.9375, "min": -40, "div": 16, "add": -40, "unit": "celsius" }, "name": "Pack temperature 2"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9133"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_PACK_T3", "path": "Battery", "fmt": { "len": 16, "max": 4055.9375, "min": -40, "div": 16, "add": -40, "unit": "celsius" }, "name": "Pack temperature 3"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9134"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_PACK_T4", "path": "Battery", "fmt": { "len": 16, "max": 4055.9375, "min": -40, "div": 16, "add": -40, "unit": "celsius" }, "name": "Pack temperature 4"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9135"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_PACK_T5", "path": "Battery", "fmt": { "len": 16, "max": 4055.9375, "min": -40, "div": 16, "add": -40, "unit": "celsius" }, "name": "Pack temperature 5"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9136"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_PACK_T6", "path": "Battery", "fmt": { "len": 16, "max": 4055.9375, "min": -40, "div": 16, "add": -40, "unit": "celsius" }, "name": "Pack temperature 6"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9137"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_PACK_T7", "path": "Battery", "fmt": { "len": 16, "max": 4055.9375, "min": -40, "div": 16, "add": -40, "unit": "celsius" }, "name": "Pack temperature 7"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9138"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_PACK_T8", "path": "Battery", "fmt": { "len": 16, "max": 4055.9375, "min": -40, "div": 16, "add": -40, "unit": "celsius" }, "name": "Pack temperature 8"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9139"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_PACK_T9", "path": "Battery", "fmt": { "len": 16, "max": 4055.9375, "min": -40, "div": 16, "add": -40, "unit": "celsius" }, "name": "Pack temperature 9"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "913A"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_PACK_T10", "path": "Battery", "fmt": { "len": 16, "max": 4055.9375, "min": -40, "div": 16, "add": -40, "unit": "celsius" }, "name": "Pack temperature 10"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "913B"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_PACK_T11", "path": "Battery", "fmt": { "len": 16, "max": 4055.9375, "min": -40, "div": 16, "add": -40, "unit": "celsius" }, "name": "Pack temperature 11"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "913C"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_PACK_T12", "path": "Battery", "fmt": { "len": 16, "max": 4055.9375, "min": -40, "div": 16, "add": -40, "unit": "celsius" }, "name": "Pack temperature 12"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "91C8"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_HV_E_AVAIL", "path": "Battery", "fmt": { "len": 24, "max": 16777.215, "div": 1000, "unit": "kilowattHours" }, "name": "High voltage battery available energy"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9210"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_CYCLES", "path": "Battery", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Complete charge cycles"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9243"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_E_CHG", "path": "Battery", "fmt": { "len": 32, "max": 4294967.2949999999, "div": 1000, "unit": "kilowattHours" }, "name": "Energy charged, total"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9245"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_E_DISCHG", "path": "Battery", "fmt": { "len": 32, "max": 4294967.2949999999, "div": 1000, "unit": "kilowattHours" }, "name": "Energy discharged, total"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "9247"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_E_REGEN", "path": "Battery", "fmt": { "len": 32, "max": 4294967.2949999999, "div": 1000, "unit": "kilowattHours" }, "name": "Energy regenerated, total"}
+  ]},
+{ "hdr": "DADB", "rax": "DB", "dbg": true, "cmd": {"22": "925D"}, "freq": 2,
+  "signals": [
+    {"id": "ZOE_HV_A", "path": "Battery", "fmt": { "len": 16, "max": 1020, "min": -1027.97, "mul": -1, "div": 32, "add": 1020, "unit": "amps" }, "name": "High voltage battery current", "suggestedMetric": "tractionBatteryCurrent"}
+  ]},
+{ "hdr": "DADF", "rax": "DF", "dbg": true, "cmd": {"22": "2004"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_INV_HV_V", "path": "Drivetrain", "fmt": { "len": 16, "max": 2047.9687, "div": 32, "unit": "volts" }, "name": "Inverter high voltage"}
+  ]},
+{ "hdr": "DADF", "rax": "DF", "dbg": true, "cmd": {"22": "7003"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_ROTOR_A1", "path": "Drivetrain", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "amps" }, "name": "Rotor current sensor 1"}
+  ]},
+{ "hdr": "DADF", "rax": "DF", "dbg": true, "cmd": {"22": "7004"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_ROTOR_A2", "path": "Drivetrain", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "amps" }, "name": "Rotor current sensor 2"}
+  ]},
+{ "hdr": "DADF", "rax": "DF", "dbg": true, "cmd": {"22": "7007"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_STATOR_A_U", "path": "Drivetrain", "fmt": { "len": 16, "max": 1547.9687, "min": -500, "div": 32, "add": -500, "unit": "amps" }, "name": "Stator current, phase U"}
+  ]},
+{ "hdr": "DADF", "rax": "DF", "dbg": true, "cmd": {"22": "7008"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_STATOR_A_V", "path": "Drivetrain", "fmt": { "len": 16, "max": 1547.9687, "min": -500, "div": 32, "add": -500, "unit": "amps" }, "name": "Stator current, phase V"}
+  ]},
+{ "hdr": "DADF", "rax": "DF", "dbg": true, "cmd": {"22": "7009"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_STATOR_A_W", "path": "Drivetrain", "fmt": { "len": 16, "max": 1547.9687, "min": -500, "div": 32, "add": -500, "unit": "amps" }, "name": "Stator current, phase W"}
+  ]},
+{ "hdr": "DADF", "rax": "DF", "dbg": true, "cmd": {"22": "700C"}, "freq": 10,
+  "signals": [
+    {"id": "ZOE_INV_T", "path": "Drivetrain", "fmt": { "len": 24, "max": 32727.998, "min": -40, "div": 512, "add": -40, "unit": "celsius" }, "name": "Inverter temperature"}
+  ]},
+{ "hdr": "DADF", "rax": "DF", "dbg": true, "cmd": {"22": "700F"}, "freq": 10,
+  "signals": [
+    {"id": "ZOE_STATOR_T1", "path": "Drivetrain", "fmt": { "len": 24, "max": 32727.998, "min": -40, "div": 512, "add": -40, "unit": "celsius" }, "name": "Stator temperature 1"}
+  ]},
+{ "hdr": "DADF", "rax": "DF", "dbg": true, "cmd": {"22": "7010"}, "freq": 10,
+  "signals": [
+    {"id": "ZOE_STATOR_T2", "path": "Drivetrain", "fmt": { "len": 24, "max": 32727.998, "min": -40, "div": 512, "add": -40, "unit": "celsius" }, "name": "Stator temperature 2"}
+  ]},
+{ "hdr": "DADF", "rax": "DF", "dbg": true, "cmd": {"22": "7038"}, "freq": 10,
+  "signals": [
+    {"id": "ZOE_ROTOR_T_RAW", "path": "Drivetrain", "fmt": { "len": 16, "max": 471.9921, "min": -40, "div": 128, "add": -40, "unit": "celsius" }, "name": "Rotor temperature, raw"}
+  ]},
+{ "hdr": "DADF", "rax": "DF", "dbg": true, "cmd": {"22": "7049"}, "freq": 5,
+  "signals": [
+    {"id": "ZOE_INV_HV_A", "path": "Drivetrain", "fmt": { "len": 16, "max": 1547.9687, "min": -500, "div": 32, "add": -500, "unit": "amps" }, "name": "Inverter high voltage current"}
+  ]},
+{ "hdr": "DADF", "rax": "DF", "dbg": true, "cmd": {"22": "7050"}, "freq": 60,
+  "signals": [
+    {"id": "ZOE_ROTOR_R", "path": "Drivetrain", "fmt": { "len": 16, "max": 127.998, "div": 512, "unit": "ohms" }, "name": "Rotor reference resistance"}
+  ]},
+{ "hdr": "DADF", "rax": "DF", "dbg": true, "cmd": {"22": "7088"}, "freq": 10,
+  "signals": [
+    {"id": "ZOE_ROTOR_T", "path": "Drivetrain", "fmt": { "len": 16, "max": 471.9921, "min": -40, "div": 128, "add": -40, "unit": "celsius" }, "name": "Rotor temperature, estimated"}
+  ]}
 ]
 }
