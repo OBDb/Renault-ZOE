@@ -1,14 +1,14 @@
 command_id: '743.220207'
 test_cases:
 - expected_values:
-    RENAULT_ODO: 0
+    ZOE_ODO_CLU: 0
   response: '7630762020700000000'
 - expected_values:
-    RENAULT_ODO: 358
+    ZOE_ODO_CLU: 358
   response: 76307620207000166DD
 - expected_values:
-    RENAULT_ODO: 370
+    ZOE_ODO_CLU: 370
   response: 76307620207000172FF
 - expected_values:
-    RENAULT_ODO: 373
+    ZOE_ODO_CLU: 373
   response: 763076202070001750B
