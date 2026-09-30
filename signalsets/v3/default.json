@@ -152,35 +152,35 @@
   ]},
 { "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "6300"}, "freq": 60,
   "signals": [
-    {"id": "ZOE_TP_FL", "path": "Tires", "fmt": { "len": 16, "max": 766.5, "mul": 3, "div": 4, "nullmax": 1022, "unit": "kilopascal" }, "name": "Front left tire pressure", "suggestedMetric": "frontLeftTirePressure"}
+    {"id": "ZOE_TP_FL", "path": "Tires", "fmt": { "len": 16, "max": 767.25, "mul": 3, "div": 4, "nullmax": 767.25, "unit": "kilopascal" }, "name": "Front left tire pressure", "suggestedMetric": "frontLeftTirePressure"}
   ]},
 { "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "6301"}, "freq": 60,
   "signals": [
-    {"id": "ZOE_TP_FR", "path": "Tires", "fmt": { "len": 16, "max": 766.5, "mul": 3, "div": 4, "nullmax": 1022, "unit": "kilopascal" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"}
+    {"id": "ZOE_TP_FR", "path": "Tires", "fmt": { "len": 16, "max": 767.25, "mul": 3, "div": 4, "nullmax": 767.25, "unit": "kilopascal" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"}
   ]},
 { "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "6302"}, "freq": 60,
   "signals": [
-    {"id": "ZOE_TP_RL", "path": "Tires", "fmt": { "len": 16, "max": 766.5, "mul": 3, "div": 4, "nullmax": 1022, "unit": "kilopascal" }, "name": "Rear left tire pressure", "suggestedMetric": "rearLeftTirePressure"}
+    {"id": "ZOE_TP_RL", "path": "Tires", "fmt": { "len": 16, "max": 767.25, "mul": 3, "div": 4, "nullmax": 767.25, "unit": "kilopascal" }, "name": "Rear left tire pressure", "suggestedMetric": "rearLeftTirePressure"}
   ]},
 { "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "6303"}, "freq": 60,
   "signals": [
-    {"id": "ZOE_TP_RR", "path": "Tires", "fmt": { "len": 16, "max": 766.5, "mul": 3, "div": 4, "nullmax": 1022, "unit": "kilopascal" }, "name": "Rear right tire pressure", "suggestedMetric": "rearRightTirePressure"}
+    {"id": "ZOE_TP_RR", "path": "Tires", "fmt": { "len": 16, "max": 767.25, "mul": 3, "div": 4, "nullmax": 767.25, "unit": "kilopascal" }, "name": "Rear right tire pressure", "suggestedMetric": "rearRightTirePressure"}
   ]},
 { "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "6310"}, "freq": 60,
   "signals": [
-    {"id": "ZOE_TT_FL", "path": "Tires", "fmt": { "len": 8, "max": 96, "min": -30, "add": -30, "nullmax": 126, "unit": "celsius" }, "name": "Front left tire temperature", "suggestedMetric": "frontLeftTireTemperature"}
+    {"id": "ZOE_TT_FL", "path": "Tires", "fmt": { "len": 8, "max": 97, "min": -30, "add": -30, "nullmax": 97, "unit": "celsius" }, "name": "Front left tire temperature", "suggestedMetric": "frontLeftTireTemperature"}
   ]},
 { "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "6311"}, "freq": 60,
   "signals": [
-    {"id": "ZOE_TT_FR", "path": "Tires", "fmt": { "len": 8, "max": 96, "min": -30, "add": -30, "nullmax": 126, "unit": "celsius" }, "name": "Front right tire temperature", "suggestedMetric": "frontRightTireTemperature"}
+    {"id": "ZOE_TT_FR", "path": "Tires", "fmt": { "len": 8, "max": 97, "min": -30, "add": -30, "nullmax": 97, "unit": "celsius" }, "name": "Front right tire temperature", "suggestedMetric": "frontRightTireTemperature"}
   ]},
 { "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "6312"}, "freq": 60,
   "signals": [
-    {"id": "ZOE_TT_RL", "path": "Tires", "fmt": { "len": 8, "max": 96, "min": -30, "add": -30, "nullmax": 126, "unit": "celsius" }, "name": "Rear left tire temperature", "suggestedMetric": "rearLeftTireTemperature"}
+    {"id": "ZOE_TT_RL", "path": "Tires", "fmt": { "len": 8, "max": 97, "min": -30, "add": -30, "nullmax": 97, "unit": "celsius" }, "name": "Rear left tire temperature", "suggestedMetric": "rearLeftTireTemperature"}
   ]},
 { "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "6313"}, "freq": 60,
   "signals": [
-    {"id": "ZOE_TT_RR", "path": "Tires", "fmt": { "len": 8, "max": 96, "min": -30, "add": -30, "nullmax": 126, "unit": "celsius" }, "name": "Rear right tire temperature", "suggestedMetric": "rearRightTireTemperature"}
+    {"id": "ZOE_TT_RR", "path": "Tires", "fmt": { "len": 8, "max": 97, "min": -30, "add": -30, "nullmax": 97, "unit": "celsius" }, "name": "Rear right tire temperature", "suggestedMetric": "rearRightTireTemperature"}
   ]},
 { "hdr": "745", "rax": "765", "dbg": true, "cmd": {"22": "8004"}, "freq": 3,
   "signals": [
