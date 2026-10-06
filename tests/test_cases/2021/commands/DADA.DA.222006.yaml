@@ -1,0 +1,5 @@
+command_id: DADA.DA.222006
+test_cases:
+- expected_values:
+    ZOE_ODO: 93833
+  response: 18DAF1DA06622006016E89

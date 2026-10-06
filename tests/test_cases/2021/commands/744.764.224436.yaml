@@ -1,0 +1,5 @@
+command_id: 744.764.224436
+test_cases:
+- expected_values:
+    ZOE_COMP_PWR: 0
+  response: '764056244360000'

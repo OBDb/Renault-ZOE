@@ -1,0 +1,5 @@
+command_id: DADA.DA.222B7A
+test_cases:
+- expected_values:
+    ZOE_CHG_TYPE: UNDEFINED
+  response: 18DAF1DA04622B7A00

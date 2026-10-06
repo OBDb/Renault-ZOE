@@ -1,0 +1,8 @@
+command_id: DADB.DB.22925D
+test_cases:
+- expected_values:
+    ZOE_HV_A: 1.1875
+  response: 18DAF1DB0562925D7F5A
+- expected_values:
+    ZOE_HV_A: 0.5
+  response: 18DAF1DB0562925D7F70

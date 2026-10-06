@@ -1,0 +1,8 @@
+command_id: DADB.DB.229001
+test_cases:
+- expected_values:
+    ZOE_SOC_9001: 59.95
+  response: 18DAF1DB05629001176B
+- expected_values:
+    ZOE_SOC_9001: 60.13
+  response: 18DAF1DB05629001177D

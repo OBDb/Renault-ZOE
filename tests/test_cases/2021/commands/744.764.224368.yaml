@@ -1,0 +1,8 @@
+command_id: 744.764.224368
+test_cases:
+- expected_values:
+    ZOE_EVAP_T_SET: 59.6
+  response: '7640562436803E4'
+- expected_values:
+    ZOE_EVAP_T_SET: 60
+  response: '7640562436803E8'

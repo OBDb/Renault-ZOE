@@ -1,0 +1,8 @@
+command_id: DADA.DA.222218
+test_cases:
+- expected_values:
+    ZOE_AAT: 9.7
+  response: 18DAF1DA056222180B0B
+- expected_values:
+    ZOE_AAT: 10
+  response: 18DAF1DA056222180B0E

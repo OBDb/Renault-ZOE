@@ -1,0 +1,8 @@
+command_id: DADA.DA.222005
+test_cases:
+- expected_values:
+    ZOE_12V_V: 13.44
+  response: 18DAF1DA056220050540
+- expected_values:
+    ZOE_12V_V: 14.71
+  response: 18DAF1DA0562200505BF

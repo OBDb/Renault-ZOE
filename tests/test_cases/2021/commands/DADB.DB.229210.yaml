@@ -1,0 +1,5 @@
+command_id: DADB.DB.229210
+test_cases:
+- expected_values:
+    ZOE_CYCLES: 810
+  response: 18DAF1DB05629210032A

@@ -1,0 +1,5 @@
+command_id: DADA.DA.22300D
+test_cases:
+- expected_values:
+    ZOE_AC_A: 0
+  response: 18DAF1DA0562300D0000

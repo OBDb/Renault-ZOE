@@ -1,0 +1,5 @@
+command_id: DB33.011E
+test_cases:
+- expected_values:
+    PTO_STAT: 0
+  response: 18DAF1DA03411E00

@@ -1,0 +1,8 @@
+command_id: 744.764.22440C
+test_cases:
+- expected_values:
+    ZOE_COMP_DIS_T: 15
+  response: 7640562440C005A
+- expected_values:
+    ZOE_COMP_DIS_T: 39.5
+  response: 7640562440C008B
