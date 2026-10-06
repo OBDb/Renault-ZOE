@@ -1,8 +1,14 @@
 command_id: DADB.DB.22925D
 test_cases:
 - expected_values:
-    ZOE_HV_A: 1.1875
-  response: 18DAF1DB0562925D7F5A
+    ZOE_HV_A: 149.375
+  response: 18DAF1DB0562925D6CD4
 - expected_values:
-    ZOE_HV_A: 0.5
-  response: 18DAF1DB0562925D7F70
+    ZOE_HV_A: 12.03125
+  response: 18DAF1DB0562925D7DFF
+- expected_values:
+    ZOE_HV_A: 11.5
+  response: 18DAF1DB0562925D7E10
+- expected_values:
+    ZOE_HV_A: -50.125
+  response: 18DAF1DB0562925D85C4

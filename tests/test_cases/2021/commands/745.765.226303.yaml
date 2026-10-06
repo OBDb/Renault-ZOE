@@ -1,5 +1,29 @@
 command_id: 745.765.226303
 test_cases:
 - expected_values:
+    ZOE_TP_RR: 231.75
+  response: '765056263030135'
+- expected_values:
+    ZOE_TP_RR: 233.25
+  response: '765056263030137'
+- expected_values:
+    ZOE_TP_RR: 234.75
+  response: '765056263030139'
+- expected_values:
+    ZOE_TP_RR: 236.25
+  response: 76505626303013B
+- expected_values:
+    ZOE_TP_RR: 237
+  response: 76505626303013C
+- expected_values:
+    ZOE_TP_RR: 238.5
+  response: 76505626303013E
+- expected_values:
+    ZOE_TP_RR: 240.75
+  response: '765056263030141'
+- expected_values:
+    ZOE_TP_RR: 241.5
+  response: '765056263030142'
+- expected_values:
     ZOE_TP_RR: null
   response: 7650562630303FF
