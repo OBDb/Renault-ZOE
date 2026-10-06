@@ -1,0 +1,32 @@
+command_id: DADB.DB.2291C8
+test_cases:
+- expected_values:
+    ZOE_HV_E_AVAIL: 26.52
+  response: 18DAF1DB066291C8006798
+- expected_values:
+    ZOE_HV_E_AVAIL: 26.53
+  response: 18DAF1DB066291C80067A2
+- expected_values:
+    ZOE_HV_E_AVAIL: 26.54
+  response: 18DAF1DB066291C80067AC
+- expected_values:
+    ZOE_HV_E_AVAIL: 26.55
+  response: 18DAF1DB066291C80067B6
+- expected_values:
+    ZOE_HV_E_AVAIL: 26.56
+  response: 18DAF1DB066291C80067C0
+- expected_values:
+    ZOE_HV_E_AVAIL: 26.57
+  response: 18DAF1DB066291C80067CA
+- expected_values:
+    ZOE_HV_E_AVAIL: 26.58
+  response: 18DAF1DB066291C80067D4
+- expected_values:
+    ZOE_HV_E_AVAIL: 26.59
+  response: 18DAF1DB066291C80067DE
+- expected_values:
+    ZOE_HV_E_AVAIL: 26.6
+  response: 18DAF1DB066291C80067E8
+- expected_values:
+    ZOE_HV_E_AVAIL: 26.61
+  response: 18DAF1DB066291C80067F2

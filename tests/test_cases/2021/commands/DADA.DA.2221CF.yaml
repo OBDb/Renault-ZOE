@@ -1,0 +1,8 @@
+command_id: DADA.DA.2221CF
+test_cases:
+- expected_values:
+    ZOE_INV_STATE: 'ON'
+  response: 18DAF1DA046221CF02
+- expected_values:
+    ZOE_INV_STATE: SLEEP_READY
+  response: 18DAF1DA046221CF05

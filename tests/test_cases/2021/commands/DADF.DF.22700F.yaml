@@ -1,0 +1,26 @@
+command_id: DADF.DF.22700F
+test_cases:
+- expected_values:
+    ZOE_STATOR_T1: 18.0918
+  response: 18DAF1DF0662700F00742F
+- expected_values:
+    ZOE_STATOR_T1: 18.13672
+  response: 18DAF1DF0662700F007446
+- expected_values:
+    ZOE_STATOR_T1: 18.18164
+  response: 18DAF1DF0662700F00745D
+- expected_values:
+    ZOE_STATOR_T1: 18.22656
+  response: 18DAF1DF0662700F007474
+- expected_values:
+    ZOE_STATOR_T1: 18.27344
+  response: 18DAF1DF0662700F00748C
+- expected_values:
+    ZOE_STATOR_T1: 18.36328
+  response: 18DAF1DF0662700F0074BA
+- expected_values:
+    ZOE_STATOR_T1: 18.4082
+  response: 18DAF1DF0662700F0074D1
+- expected_values:
+    ZOE_STATOR_T1: 18.45508
+  response: 18DAF1DF0662700F0074E9

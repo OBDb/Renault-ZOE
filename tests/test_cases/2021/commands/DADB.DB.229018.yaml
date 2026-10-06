@@ -1,0 +1,11 @@
+command_id: DADB.DB.229018
+test_cases:
+- expected_values:
+    ZOE_CHG_P_MAX: 62.4
+  response: 18DAF1DB056290181860
+- expected_values:
+    ZOE_CHG_P_MAX: 63.88
+  response: 18DAF1DB0562901818F4
+- expected_values:
+    ZOE_CHG_P_MAX: 64.08
+  response: 18DAF1DB056290181908

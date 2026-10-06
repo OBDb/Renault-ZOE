@@ -1,0 +1,5 @@
+command_id: DADA.DA.223064
+test_cases:
+- expected_values:
+    ZOE_MOTOR_RPM: 0
+  response: 18DAF1DA056230640000

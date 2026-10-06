@@ -1,0 +1,5 @@
+command_id: 744.764.224341
+test_cases:
+- expected_values:
+    ZOE_PTC_REQ: 0
+  response: '7640462434100'

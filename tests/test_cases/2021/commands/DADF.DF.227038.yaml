@@ -1,0 +1,14 @@
+command_id: DADF.DF.227038
+test_cases:
+- expected_values:
+    ZOE_ROTOR_T_RAW: 7.98438
+  response: 18DAF1DF0562703817FE
+- expected_values:
+    ZOE_ROTOR_T_RAW: 8.41406
+  response: 18DAF1DF056270381835
+- expected_values:
+    ZOE_ROTOR_T_RAW: 15.99219
+  response: 18DAF1DF056270381BFF
+- expected_values:
+    ZOE_ROTOR_T_RAW: 16.60156
+  response: 18DAF1DF056270381C4D

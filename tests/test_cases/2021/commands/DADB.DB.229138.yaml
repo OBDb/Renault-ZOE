@@ -1,0 +1,5 @@
+command_id: DADB.DB.229138
+test_cases:
+- expected_values:
+    ZOE_PACK_T8: 15
+  response: 18DAF1DB056291380370

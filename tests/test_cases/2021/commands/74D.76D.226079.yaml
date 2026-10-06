@@ -1,0 +1,26 @@
+command_id: 74D.76D.226079
+test_cases:
+- expected_values:
+    ZOE_12V_A: 16
+  response: 76D0562607900A0
+- expected_values:
+    ZOE_12V_A: 17
+  response: 76D0562607900AA
+- expected_values:
+    ZOE_12V_A: 18
+  response: 76D0562607900B4
+- expected_values:
+    ZOE_12V_A: 19
+  response: 76D0562607900BE
+- expected_values:
+    ZOE_12V_A: 23
+  response: 76D0562607900E6
+- expected_values:
+    ZOE_12V_A: 24
+  response: 76D0562607900F0
+- expected_values:
+    ZOE_12V_A: 25
+  response: 76D0562607900FA
+- expected_values:
+    ZOE_12V_A: 26
+  response: 76D056260790104

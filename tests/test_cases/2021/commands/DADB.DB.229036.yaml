@@ -1,0 +1,14 @@
+command_id: DADB.DB.229036
+test_cases:
+- expected_values:
+    ZOE_CELL_V22: 3.7334
+  response: 18DAF1DB056290360EEF
+- expected_values:
+    ZOE_CELL_V22: 3.73535
+  response: 18DAF1DB056290360EF1
+- expected_values:
+    ZOE_CELL_V22: 3.73633
+  response: 18DAF1DB056290360EF2
+- expected_values:
+    ZOE_CELL_V22: 3.7373
+  response: 18DAF1DB056290360EF3

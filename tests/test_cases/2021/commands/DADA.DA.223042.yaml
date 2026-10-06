@@ -1,0 +1,11 @@
+command_id: DADA.DA.223042
+test_cases:
+- expected_values:
+    ZOE_HV_A_3042: -14592.75
+  response: 18DAF1DA056230420DFE
+- expected_values:
+    ZOE_HV_A_3042: -14592.25
+  response: 18DAF1DA056230420DFF
+- expected_values:
+    ZOE_HV_A_3042: -14591.75
+  response: 18DAF1DA056230420E00

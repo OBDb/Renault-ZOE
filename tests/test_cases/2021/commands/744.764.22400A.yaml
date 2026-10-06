@@ -1,0 +1,26 @@
+command_id: 744.764.22400A
+test_cases:
+- expected_values:
+    ZOE_EVAP_T: 18.9
+  response: 7640562400A024D
+- expected_values:
+    ZOE_EVAP_T: 19
+  response: 7640562400A024E
+- expected_values:
+    ZOE_EVAP_T: 19.4
+  response: 7640562400A0252
+- expected_values:
+    ZOE_EVAP_T: 19.5
+  response: 7640562400A0253
+- expected_values:
+    ZOE_EVAP_T: 19.7
+  response: 7640562400A0255
+- expected_values:
+    ZOE_EVAP_T: 19.8
+  response: 7640562400A0256
+- expected_values:
+    ZOE_EVAP_T: 19.9
+  response: 7640562400A0257
+- expected_values:
+    ZOE_EVAP_T: 20
+  response: 7640562400A0258

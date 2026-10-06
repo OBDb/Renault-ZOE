@@ -1,0 +1,17 @@
+command_id: DADA.DA.2220FE
+test_cases:
+- expected_values:
+    ZOE_HV_V_EVC: 358.1
+  response: 18DAF1DA056220FE0DFD
+- expected_values:
+    ZOE_HV_V_EVC: 358.2
+  response: 18DAF1DA056220FE0DFE
+- expected_values:
+    ZOE_HV_V_EVC: 358.3
+  response: 18DAF1DA056220FE0DFF
+- expected_values:
+    ZOE_HV_V_EVC: 358.4
+  response: 18DAF1DA056220FE0E00
+- expected_values:
+    ZOE_HV_V_EVC: 358.5
+  response: 18DAF1DA056220FE0E01

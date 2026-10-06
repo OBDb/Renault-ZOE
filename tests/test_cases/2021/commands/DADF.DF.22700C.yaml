@@ -1,0 +1,14 @@
+command_id: DADF.DF.22700C
+test_cases:
+- expected_values:
+    ZOE_INV_T: 16.71484
+  response: 18DAF1DF0662700C00716E
+- expected_values:
+    ZOE_INV_T: 17.5
+  response: 18DAF1DF0662700C007300
+- expected_values:
+    ZOE_INV_T: 17.92773
+  response: 18DAF1DF0662700C0073DB
+- expected_values:
+    ZOE_INV_T: 19.07227
+  response: 18DAF1DF0662700C007625

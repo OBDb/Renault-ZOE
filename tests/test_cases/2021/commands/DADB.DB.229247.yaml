@@ -1,0 +1,5 @@
+command_id: DADB.DB.229247
+test_cases:
+- expected_values:
+    ZOE_E_REGEN: 1855.46
+  response: 18DAF1DB07629247001C4FE4

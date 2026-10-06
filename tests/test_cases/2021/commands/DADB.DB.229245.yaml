@@ -1,0 +1,8 @@
+command_id: DADB.DB.229245
+test_cases:
+- expected_values:
+    ZOE_E_DISCHG: 16835.661
+  response: 18DAF1DB076292450100E44D
+- expected_values:
+    ZOE_E_DISCHG: 16835.747
+  response: 18DAF1DB076292450100E4A3

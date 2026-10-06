@@ -1,0 +1,5 @@
+command_id: DADA.DA.22300B
+test_cases:
+- expected_values:
+    ZOE_AC_PHASES: NONE
+  response: 18DAF1DA0462300B03

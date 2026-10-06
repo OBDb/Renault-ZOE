@@ -1,0 +1,5 @@
+command_id: DADB.DB.229012
+test_cases:
+- expected_values:
+    ZOE_HV_T: 15
+  response: 18DAF1DB056290120370
