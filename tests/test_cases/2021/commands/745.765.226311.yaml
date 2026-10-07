@@ -1,6 +1,9 @@
 command_id: 745.765.226311
 test_cases:
 - expected_values:
+    ZOE_TT_FR: 11
+  response: '7650462631129'
+- expected_values:
     ZOE_TT_FR: 13
   response: 765046263112B
 - expected_values:
