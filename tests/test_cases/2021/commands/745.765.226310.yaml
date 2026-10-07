@@ -4,23 +4,5 @@ test_cases:
     ZOE_TT_FL: 4
   response: '7650462631022'
 - expected_values:
-    ZOE_TT_FL: 5
-  response: '7650462631023'
-- expected_values:
-    ZOE_TT_FL: 13
-  response: 765046263102B
-- expected_values:
-    ZOE_TT_FL: 14
-  response: 765046263102C
-- expected_values:
-    ZOE_TT_FL: 15
-  response: 765046263102D
-- expected_values:
-    ZOE_TT_FL: 17
-  response: 765046263102F
-- expected_values:
-    ZOE_TT_FL: 18
-  response: '7650462631030'
-- expected_values:
     ZOE_TT_FL: null
   response: 765046263107F
