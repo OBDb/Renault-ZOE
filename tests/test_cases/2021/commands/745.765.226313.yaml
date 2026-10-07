@@ -16,5 +16,17 @@ test_cases:
     ZOE_TT_RR: 16
   response: 765046263132E
 - expected_values:
+    ZOE_TT_RR: 17
+  response: 765046263132F
+- expected_values:
+    ZOE_TT_RR: 18
+  response: '7650462631330'
+- expected_values:
+    ZOE_TT_RR: 19
+  response: '7650462631331'
+- expected_values:
+    ZOE_TT_RR: 20
+  response: '7650462631332'
+- expected_values:
     ZOE_TT_RR: null
   response: 765046263137F
