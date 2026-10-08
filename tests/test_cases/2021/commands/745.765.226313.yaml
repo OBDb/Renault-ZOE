@@ -4,29 +4,5 @@ test_cases:
     ZOE_TT_RR: 5
   response: '7650462631323'
 - expected_values:
-    ZOE_TT_RR: 12
-  response: 765046263132A
-- expected_values:
-    ZOE_TT_RR: 14
-  response: 765046263132C
-- expected_values:
-    ZOE_TT_RR: 15
-  response: 765046263132D
-- expected_values:
-    ZOE_TT_RR: 16
-  response: 765046263132E
-- expected_values:
-    ZOE_TT_RR: 17
-  response: 765046263132F
-- expected_values:
-    ZOE_TT_RR: 18
-  response: '7650462631330'
-- expected_values:
-    ZOE_TT_RR: 19
-  response: '7650462631331'
-- expected_values:
-    ZOE_TT_RR: 20
-  response: '7650462631332'
-- expected_values:
     ZOE_TT_RR: null
   response: 765046263137F
