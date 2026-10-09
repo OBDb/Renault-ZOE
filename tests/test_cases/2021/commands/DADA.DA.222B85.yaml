@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     ZOE_PLUG: 0
   response: 18DAF1DA04622B8500
+- expected_values:
+    ZOE_PLUG: 1
+  response: 18DAF1DA04622B8501

@@ -9,3 +9,6 @@ test_cases:
 - expected_values:
     ZOE_HV_V: 358.4
   response: 18DAF1DB056290050E00
+- expected_values:
+    ZOE_HV_V: 399.9
+  response: 18DAF1DB056290050F9F
