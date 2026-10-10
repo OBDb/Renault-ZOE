@@ -1,8 +1,8 @@
 command_id: 745.765.226303
 test_cases:
 - expected_values:
-    ZOE_TP_RR: 225.75
-  response: 76505626303012D
+    ZOE_TP_RR: 222
+  response: '765056263030128'
 - expected_values:
     ZOE_TP_RR: null
   response: 7650562630303FF
