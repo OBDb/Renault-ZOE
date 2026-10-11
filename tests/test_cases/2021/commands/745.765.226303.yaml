@@ -4,5 +4,8 @@ test_cases:
     ZOE_TP_RR: 222
   response: '765056263030128'
 - expected_values:
+    ZOE_TP_RR: 245.25
+  response: '765056263030147'
+- expected_values:
     ZOE_TP_RR: null
   response: 7650562630303FF
