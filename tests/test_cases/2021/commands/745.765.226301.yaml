@@ -4,8 +4,8 @@ test_cases:
     ZOE_TP_FR: 217.5
   response: '765056263010122'
 - expected_values:
-    ZOE_TP_FR: 247.5
-  response: 76505626301014A
+    ZOE_TP_FR: 250.5
+  response: 76505626301014E
 - expected_values:
     ZOE_TP_FR: null
   response: 7650562630103FF
