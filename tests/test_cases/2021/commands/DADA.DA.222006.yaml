@@ -9,3 +9,6 @@ test_cases:
 - expected_values:
     ZOE_ODO: 93952
   response: 18DAF1DA06622006016F00
+- expected_values:
+    ZOE_ODO: 94218
+  response: 18DAF1DA0662200601700A
