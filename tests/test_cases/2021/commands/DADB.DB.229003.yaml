@@ -1,6 +1,9 @@
 command_id: DADB.DB.229003
 test_cases:
 - expected_values:
+    ZOE_SOH: 93.69
+  response: 18DAF1DB056290032499
+- expected_values:
     ZOE_SOH: 93.7
   response: 18DAF1DB05629003249A
 - expected_values:
