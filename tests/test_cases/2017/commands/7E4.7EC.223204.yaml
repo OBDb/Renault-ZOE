@@ -1,0 +1,11 @@
+command_id: 7E4.7EC.223204
+test_cases:
+- expected_values:
+    ZOE_HV_A_PEB: -40.25
+  response: 7EC056232047F5F
+- expected_values:
+    ZOE_HV_A_PEB: -0.5
+  response: 7EC056232047FFE
+- expected_values:
+    ZOE_HV_A_PEB: 4.25
+  response: 7EC056232048011

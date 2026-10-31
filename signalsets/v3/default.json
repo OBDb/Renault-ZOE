@@ -307,15 +307,15 @@
     {"id": "ZOE_CELL1_V95", "path": "Battery.Cells", "fmt": {"bix": 512, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 95 voltage"},
     {"id": "ZOE_CELL1_V96", "path": "Battery.Cells", "fmt": {"bix": 528, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Cell 96 voltage"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "3203"}, "freq": 5,
+{ "hdr": "7E4", "rax": "7EC", "cmd": {"22": "3203"}, "freq": 5, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ZOE_HV_V_PEB", "path": "Battery", "fmt": { "len": 16, "max": 32767.5, "div": 2, "unit": "volts" }, "name": "High voltage battery voltage, power electronics"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "3204"}, "freq": 2,
+{ "hdr": "7E4", "rax": "7EC", "cmd": {"22": "3204"}, "freq": 2, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ZOE_HV_A_PEB", "path": "Battery", "fmt": { "len": 16, "max": 8191.75, "min": -8192, "div": 4, "add": -8192, "unit": "amps" }, "name": "High voltage battery current, power electronics"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "33F6"}, "freq": 10,
+{ "hdr": "7E4", "rax": "7EC", "cmd": {"22": "33F6"}, "freq": 10, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "ZOE_INV_T_PEB", "path": "Drivetrain", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Inverter temperature, power electronics"}
   ]},
