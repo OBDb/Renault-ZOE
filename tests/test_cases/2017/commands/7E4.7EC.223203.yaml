@@ -4,8 +4,8 @@ test_cases:
     ZOE_HV_V_PEB: 337
   response: 7EC0562320302A2
 - expected_values:
-    ZOE_HV_V_PEB: 355
-  response: 7EC0562320302C6
-- expected_values:
     ZOE_HV_V_PEB: 384.5
   response: 7EC056232030301
+- expected_values:
+    ZOE_HV_V_PEB: 500
+  response: 7EC0562320303E8
